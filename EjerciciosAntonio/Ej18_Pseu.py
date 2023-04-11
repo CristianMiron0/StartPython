@@ -1,18 +1,20 @@
-#Anagrama
-cadena1=input("Introduce la primera cadena")
-cadena2=input("Introduce la segunda cadena")
+#Crea un algoritmo que determine si una cadena de texto es un anagrama de otra cadena de texto
+def principal():
+        
+    cadena1=input("Introduce la primera cadena: ")
+    cadena2=input("Introduce la segunda cadena: ")
 
-temp=cadena2
-cadena1=str(list).split()
-temp=str(list).split()
+    temp=[x for x in cadena1]
+    temp2=[x for x in cadena2]
 
-for n in range(0, len(cadena1)):
-    for l in range(0, len(cadena2)):
-        if(cadena1[n]==temp[l]):
-            temp.remove(temp[l])
+    for n in range(0, len(temp)):
+        for l in range(0, len(temp2)):
+            if(temp[n]==temp2[l]):
+                temp2.remove(temp2[l])
+                break
 
-if len(temp)==0:
-    print("Son anagramas")
-else:
-    print("No son anagramas")            
-    
+    if len(temp2)==0:
+        print("Son anagramas")
+    else:
+        print("No son anagramas")            
+        

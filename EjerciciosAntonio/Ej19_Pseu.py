@@ -1,32 +1,51 @@
-lista_numeros=[]
-numero=0
-salida=False
-confirmacion=""
+#Dada una lista de numeros enteros, crea un algoritmo que elimine los números duplicados de la lista
 
-sublista=[]
+def principal():
+        
+    lista_numeros=[]
+    numero=0
+    salida=False
+    confirmacion=""
+    encontrado=False
 
-numero=input("Introuzca un numero:")
-lista_numeros.append(int(numero))
-mayor=int(numero)
-menor=int(numero)
+    sublista=[]
 
-while salida!=True :
+    numero=input("Introuzca un numero:")
+    #Se comprueba que sea un numero
+    try:
+            entero=int(numero)
+    except ValueError:
+            print("El numero debe ser un entero")
+    lista_numeros.append(int(numero))
 
-    confirmacion=input("Quiere introducir otro numero? S/N :")
-    
-    if(confirmacion=='n' or confirmacion=='N'):
-        salida=True
-    elif(confirmacion=='s' or confirmacion=='S'):
-        numero=input("Introuzca un numero:")
-        lista_numeros.append(int(numero))
-    else:
-        print("Opcion erronea")
+    #El usuario introduce los valores de la lista
+    while salida!=True :
 
-for i in range(0,len(lista_numeros)):
-    for j in range(0,len(sublista)):
-        if(lista_numeros[i]==sublista[j]):
-            lista_numeros.remove(lista_numeros[i])
+        confirmacion=input("Quiere introducir otro numero? S/N :")
+        
+        if(confirmacion=='n' or confirmacion=='N'):
+            salida=True
+        elif(confirmacion=='s' or confirmacion=='S'):
+            numero=input("Introuzca un numero:")
+            try:
+                entero=int(numero)
+            except ValueError:
+                print("El numero debe ser un entero")
+            lista_numeros.append(int(numero))
         else:
-            sublista.append(lista_numeros[i])
-print(lista_numeros)
+            print("Opcion erronea")
+
+    sublista.append(None)
+
+    #Se comprueban duplicados
+    for i in range(0,len(lista_numeros)):
+        for j in range(0,len(sublista)):
+            if(lista_numeros[i]==sublista[j]):
+                encontrado=True
+            elif j==len(sublista)-1 and encontrado==False:
+                sublista.append(lista_numeros[i])
+        encontrado=False
+
+    sublista.remove(sublista[0])
+    print(sublista)
 
