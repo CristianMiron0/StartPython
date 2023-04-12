@@ -1,8 +1,8 @@
 # **Ejercicios con algoritmo**
 
-> ## Alejadro Collantes
+> ## Alejadro Collantes Linares
 >
-> ## Antonio Miralles
+> ## Antonio Miralles Gutiérrez
 >
 > ## Cristian Miron
 
