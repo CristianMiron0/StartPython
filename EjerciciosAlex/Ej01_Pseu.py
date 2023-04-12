@@ -9,9 +9,10 @@ while len(str(dni)) != 8 or not isinstance(dni, int):
         if len(str(dni)) != 8 or not isinstance(dni, int):
             print("DNI Inválido")
 
-resultadoResto = dni % 23
+def principal():
+    resultadoResto = dni % 23
 
-for i in range(0, len(tablaLetrasDNI)):
-    if resultadoResto == i:
-        resultado = tablaLetrasDNI[i]
-        print("La letra de este DNI es " + resultado)
+    for i in range(0, len(tablaLetrasDNI)):
+        if resultadoResto == i:
+            resultado = tablaLetrasDNI[i]
+            print("La letra de este DNI es " + resultado)

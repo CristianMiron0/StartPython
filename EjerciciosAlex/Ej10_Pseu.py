@@ -11,9 +11,8 @@ def leer(lista):
             else:
                 stop = True
 
-listaPalabras = []
-leer(listaPalabras)
-listaPalabras.sort()
-print(listaPalabras)
-
-#Listo para push
+def principal():
+    listaPalabras = []
+    leer(listaPalabras)
+    listaPalabras.sort()
+    print(listaPalabras)

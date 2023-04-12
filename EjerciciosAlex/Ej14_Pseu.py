@@ -25,11 +25,12 @@ def leer():
                 stop = True
     return lista
 
-listaNum = leer()
-suma = 0
+def principal():
+    listaNum = leer()
+    suma = 0
 
-for num in listaNum:
-    if num % 2 == 0:
-        suma += num
+    for num in listaNum:
+        if num % 2 == 0:
+            suma += num
 
-print(f"El valor total de la suma de todos los números pares es: {suma}")
+    print(f"El valor total de la suma de todos los números pares es: {suma}")
