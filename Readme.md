@@ -1,6 +1,6 @@
 # **Ejercicios con algoritmo**
 
-> ## Alejadro Collantes Linares
+> ## Alejandro Collantes Linares
 >
 > ## Antonio Miralles Gutiérrez
 >
