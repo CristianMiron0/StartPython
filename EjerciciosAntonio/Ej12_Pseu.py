@@ -1,18 +1,28 @@
-#Crea un algoritmo que calcule el factorial de un número entero.
+#Primos
+
 def principal():
 
-        factorial=input("Introduce un numero: ")
+    numero=input("Introduce un numero: ")
 
-        resultado=1
-        #Se comprueba que sea un numero
-        try:
-                entero=int(factorial)
-        except ValueError:
-                print("El numero debe ser un entero")
-        #Se realiza la operacion
-        for n in range(1,int(factorial)+1):
-                resultado=resultado*n
+    n=int(numero)-1
+    resultado=0
+    primo=True
+    #Se comprueba que sea un numero
+    try:
+            entero=int(numero)
+    except ValueError:
+            print("El numero debe ser un entero")
+    #Se comprueba que sea primo
+    while n>1 :
+        resultado= int(numero) % n
+        if resultado==0 :
+            primo=False
+            n=0
+        else:
+            n=n-1    
+    #Se imprime
+    if(primo==True):
+        print("El numero es primo")       
+    else:
+        print("El numero no es primo") 
 
-
-        print(resultado)
-        
