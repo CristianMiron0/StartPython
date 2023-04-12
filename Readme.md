@@ -6,7 +6,7 @@
 >
 > ## Cristian Miron
 
-# Insctucciones de instalacion
+# Instrucciones de instalacion
 
 - Clonar el repositorio
   - `git clone url https://github.com/CristianMiron0/StartPython.git`
