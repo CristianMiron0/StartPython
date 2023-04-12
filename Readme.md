@@ -18,9 +18,9 @@
     - `env\scripts\activate.bat` (Windows Command Line)
   - MacOS o Linux
     - `python3 -m venv env`
-  
+
     - `source env\bin\activate`
-  
+
 - Instalar las librerias
   - `pip install -r requirements.txt`
 
