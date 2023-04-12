@@ -1,7 +1,6 @@
 import os
 from EjerciciosAlex import Ej01_Pseu
 from EjerciciosAlex import Ej02_Pseu
-from EjerciciosAlex import Ej03_Pseu
 from EjerciciosAlex import Ej04_Pseu
 from EjerciciosAntonio import Ej05_Pseu
 from EjerciciosAntonio import Ej06_Pseu
@@ -25,7 +24,6 @@ while True:
     print("Menu principal")
     print("1-Calcular la letra del DNI Espanol")
     print("2-Calcular el salario de un empleado")
-    print("3-Determinar la ruta para llegar a una ciudad por avion")
     print("4-Calcula el área y perímetro de un círculo dado su radio")
     print("5-A partir de una lista de números, determine cuál es el más grande y cuál es el más pequeño")
     print("6-Convierta grados Celsius a Fahrenheit")
@@ -49,8 +47,6 @@ while True:
         Ej01_Pseu.principal()
     elif opcion == "2":
         Ej02_Pseu.principal()
-    elif opcion == "3":
-        Ej03_Pseu.principal()
     elif opcion == "4":
         Ej04_Pseu.principal()
     elif opcion == "5":
